@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: #2F2D2E;
+    color: #fff;
+    box-sizing: border-box;
+}
+#container{
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.lateral-esquerdo{
+    width: 50%;
+    height: 100vh;
+    float: left;
+    /* background-color: yellow; */
+}
+.lateral-esquerdo img{
+    width: 35vw;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.lateral-direito{
+    width: 50%;
+    float: right;
+    /* background-color: blue; */
+}
+.card{
+    width: 60%;
+    background: rgba( 233, 16, 52, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.card h2{
+    text-align: center;
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.card form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card form label{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.card form input, .card form select{
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 0.8em;
+}
+.card form input[type="submit"]{
+    background: #E91034;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card form input[type="submit"]:hover{
+    background: #b10e29;
+}
+@media screen and (max-width: 930px){
+    #container{
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .lateral-esquerdo{
+        width: 100%;
+        height: 50vh;
+        float: none;
+        margin: 0 auto;
+    }
+    .lateral-esquerdo img{
+        width: 40vw;
+        margin-top: -10px;
+        margin-left: 30%;
+    }
+    .lateral-direito{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+    .card{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    #container{
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
+        /* background-color: yellow; */
+    }
+    .lateral-esquerdo{
+        width: 100%;
+        height: 50vh;
+        float: none;
+        margin: 0 auto;
+    }
+    .lateral-esquerdo img{
+        width: 300px;
+        margin-top: -10px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .lateral-direito{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+    .card{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 524px){
+    #container{
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    .lateral-esquerdo{
+        width: 100%;
+        height: 50vh;
+        float: none;
+        margin: 0 auto;
+    }
+    .lateral-esquerdo img{
+        width: 250px;
+        /* margin-top: -10px; */
+        text-align: center;
+    }
+    .lateral-direito{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+    .card{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: -50px;
+        width: 250px;
+    }
+}
